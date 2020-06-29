@@ -1,0 +1,32 @@
+.logo {
+  display: inline;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 85px;
+
+  &-web {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: $accent-blue-color;
+    margin-right: 0;
+  }
+
+  &-studio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: $logo-color;
+
+    margin-left: 0px;
+    margin-right: auto;
+  }
+}
