@@ -5,12 +5,17 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .container-hero {
-  background-size: 480px 400px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.6),
@@ -20,6 +25,15 @@
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .hero {
@@ -27,16 +41,26 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 42px;
-    /* or 162% */
-
-    text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
-    padding: 30px;
-    margin: 0px;
+    letter-spacing: 0.06em;
+
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+      line-height: 42px;
+      /* or 162% */
+      text-align: center;
+      padding: 30px;
+      margin: 0px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 768px;
+    }
+    @media screen and (min-width: 120px) {
+      font-size: 44px;
+      line-height: 60px;
+      /* or 136% */
+    }
   }
   &-section {
     display: flex;
