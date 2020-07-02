@@ -66,6 +66,14 @@
     align-items: center;
     justify-content: center;
     background-color: $secondary-background-color;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      flex-basis: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &-element:last-child {
     margin-right: 0px;

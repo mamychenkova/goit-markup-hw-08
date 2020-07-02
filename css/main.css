@@ -406,6 +406,22 @@ ul {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-element {
+    display: block;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .advantages-element:last-child {
   margin-right: 0px;
 }
