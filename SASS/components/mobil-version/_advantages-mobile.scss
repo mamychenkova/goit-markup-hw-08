@@ -1,7 +1,18 @@
 .advantages {
   margin: 0px;
-  padding-bottom: 94px;
   border-bottom: 2px solid rgba(252, 229, 229, 0.4);
+
+  // @media screen and (min-width: 480px) {
+  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   &-heading {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -11,14 +22,16 @@
   &-section {
     @media screen and (min-width: 480px) {
       padding-top: 60px;
+      padding-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
-      width: 768px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
       padding-top: 94px;
+      padding-bottom: 94px;
     }
-    padding-top: 60px;
   }
   & h3 {
     font-style: normal;
@@ -29,10 +42,11 @@
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 10px;
-    text-align: center;
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
   }
   & p {
-    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
