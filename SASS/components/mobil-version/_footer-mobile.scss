@@ -1,0 +1,141 @@
+.footer {
+  background: #2f303a;
+  color: $white-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  & .container {
+    @media screen and (max-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  .logo-studio {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: $white-color;
+  }
+  .logo-web {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+  }
+  .button {
+    margin-top: 34px;
+    display: flex;
+  }
+}
+.adress-container {
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 140px;
+  }
+}
+.sociallink-container {
+  margin-right: 100px;
+}
+
+.contacts {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: $white-color;
+
+  & > br {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: $footer-text-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+}
+
+.link-end {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: $accent-blue-color;
+  }
+  &:hover .social {
+    fill: $white-color;
+  }
+}
+
+.sociallink-end {
+  display: flex;
+  color: rgba(255, 255, 255, 0.1);
+  margin-top: 16px;
+}
+
+.mailing-container {
+  display: flex;
+}
+.mailing-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.email {
+  width: 270px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid $footer-text-color;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 16px;
+  background-color: #2f303a;
+  color: $footer-text-color;
+  @media screen and (min-width: 768px) {
+    display: block;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+.plane {
+  margin-left: 10px;
+  fill: $white-color;
+  background-color: $accent-blue-color;
+}
+.additional-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}

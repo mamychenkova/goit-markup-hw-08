@@ -4,9 +4,8 @@
 
   & .container {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid $footer-text-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .logo-studio {
     font-family: Raleway;
@@ -77,27 +76,14 @@
     fill: $white-color;
   }
 }
-.end {
-  font-size: 12px;
-  line-height: 24px;
-  /* or 200% */
 
-  width: 100%;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $footer-text-color;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0px;
-}
 .sociallink-end {
   display: flex;
   color: rgba(255, 255, 255, 0.1);
   margin-top: 16px;
 }
 
-.mailing-container {
+.mailing-form {
   display: flex;
 }
 .email {
