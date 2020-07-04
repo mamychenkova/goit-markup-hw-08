@@ -63,8 +63,7 @@
       margin: 15px;
     }
     @media screen and (min-width: 1200px) {
-      width: calc((100%-105px) / 4);
-      // justify-content: space-evenly;
+      width: calc((100%-120px) / 4);
       margin: 15px;
     }
 
@@ -72,9 +71,6 @@
       @media screen and (max-width: 767px) {
         margin-bottom: 30px;
       }
-    }
-    &:last-child {
-      margin-right: 0;
     }
   }
 
