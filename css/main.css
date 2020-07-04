@@ -202,11 +202,15 @@ ul {
 .container-hero {
   margin-right: auto;
   margin-left: auto;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
   background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1600px;
+  min-height: 400px;
 }
 
 @media screen and (min-width: 480px) {
@@ -329,7 +333,6 @@ ul {
 
 .advantages {
   margin: 0px;
-  border-bottom: 2px solid rgba(252, 229, 229, 0.4);
 }
 
 @media screen and (min-width: 768px) {
@@ -427,7 +430,6 @@ ul {
   line-height: 24px;
   /* or 171% */
   letter-spacing: 0.03em;
-  margin-bottom: 0px;
   margin-right: 0px;
   color: #757575;
 }
@@ -436,6 +438,12 @@ ul {
   .advantages p {
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages p {
+    margin-bottom: 0px;
   }
 }
 
@@ -495,7 +503,6 @@ ul {
 .examples {
   margin-top: 0px;
   padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .examples-list {
