@@ -171,13 +171,17 @@ ul {
 }
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .container {
     width: 480px;
   }
@@ -186,21 +190,18 @@ ul {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 .container-hero {
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.6)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
   background-repeat: no-repeat;
@@ -370,14 +371,7 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
-  .advantages-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .advantages-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -400,6 +394,12 @@ ul {
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .advantages h3 {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -430,24 +430,12 @@ ul {
   margin-bottom: 0px;
   margin-right: 0px;
   color: #757575;
-  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .advantages p {
     margin-right: 0px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages p {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages p {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -472,13 +460,13 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .advantages-element {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .advantages-element {
     margin-right: 30px;
   }
@@ -538,42 +526,45 @@ ul {
 }
 
 h2 {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
   margin-top: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .team-section {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .team-section {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .team-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team-section {
-    padding-top: 60px -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
-    padding-top: 94px -15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -583,6 +574,28 @@ h2 {
   line-height: 42px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: -15px;
+  }
 }
 
 .team-list-person {
@@ -595,8 +608,38 @@ h2 {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .team-list-person {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-person {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-person {
+    width: calc((100%-105px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list-person:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team-list-person:last-child {
-  margin-right: 0px;
+  margin-right: 0;
+}
+
+.team-list-person:last-child {
+  margin-right: px;
 }
 
 .name {
@@ -762,21 +805,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .client-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .client-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .client-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -839,10 +868,22 @@ h2 {
 }
 
 .footer {
+  font-family: Roboto, sans-serif;
   background: #2f303a;
   color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .footer .container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -893,8 +934,23 @@ h2 {
   }
 }
 
-.sociallink-container {
-  margin-right: 100px;
+@media screen and (max-width: 768px) {
+  .sociallink-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sociallink-container {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sociallink-container {
+    margin-right: 100px;
+  }
 }
 
 .contacts {
@@ -921,8 +977,8 @@ h2 {
 @media screen and (max-width: 768px) {
   .contacts {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
 }
 
