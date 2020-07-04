@@ -1,17 +1,19 @@
 .team {
   &-section {
     background-color: $secondary-background-color;
+    @media screen and (max-width: 480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
     @media screen and (min-width: 480px) {
       padding-top: 60px;
       padding-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 60px -15px;
     }
     @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
+      padding-top: 94px -15px;
     }
   }
   &-heading {
@@ -23,6 +25,35 @@
   }
 }
 .team-list {
+  // @media screen and (min-width: 480px) {
+  //   justify-content: center;
+  // }
+  // @media screen and (max-width: 768px) {
+  //   justify-content: center;
+  // }
+  // @media screen and (max-width: 1200px) {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   flex-basis: 50%;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   flex-basis: 50%;
+  //   // justify-content: space-evenly;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // justify-content: space-evenly;
+
+  // @media screen and (min-width: 1200px) {
+
+  //   display: flex;
+  //   width: calc();
+  //   justify-content: space-evenly;
+  // }
   &-person {
     background: #ffffff;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,6 +63,34 @@
     border-top-right-radius: inherit;
     margin-bottom: 30px;
   }
+  // @media screen and (max-width: 480px) {
+  //   width: 100%;
+  //   display: block;
+  // }
+  // @media screen and (max-width: 768px) {
+  //   display: block;
+  // }
+
+  // @media screen and (max-width: 1200px) {
+  //   width: calc((100%-60px) / 2);
+
+  //   justify-content: space-evenly;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: calc((100%-60px) / 2);
+  //   margin-right: 15px;
+  //   margin-left: 15px;
+  //   flex-basis: 50%;
+  //   // justify-content: space-evenly;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: calc((100%-150) / 4);
+  //   // justify-content: space-evenly;
+
+  //   margin-right: 15px;
+  //   margin-left: 15px;
+  // }
+
   &-person:last-child {
     margin-right: 0px;
   }

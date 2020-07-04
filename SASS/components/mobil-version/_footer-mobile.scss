@@ -1,10 +1,18 @@
 .footer {
+  font-family: Roboto, sans-serif;
   background: #2f303a;
   color: $white-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
   & .container {
     @media screen and (max-width: 480px) {
+      text-align: center;
     }
     @media screen and (min-width: 768px) {
     }
@@ -47,7 +55,16 @@
   }
 }
 .sociallink-container {
-  margin-right: 100px;
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 100px;
+  }
 }
 
 .contacts {
@@ -72,8 +89,8 @@
 
   @media screen and (max-width: 768px) {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -103,6 +120,7 @@
 
 .mailing-container {
   display: flex;
+  align-items: center;
 }
 .mailing-form {
   @media screen and (min-width: 1200px) {

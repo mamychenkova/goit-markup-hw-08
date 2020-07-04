@@ -551,6 +551,13 @@ h2 {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 480px) {
+  .team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team-section {
     padding-top: 60px;
@@ -560,15 +567,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .team-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 60px -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 94px -15px;
   }
 }
 
@@ -757,12 +762,17 @@ h2 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .client-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .client-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -953,6 +963,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
