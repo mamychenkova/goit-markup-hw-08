@@ -276,58 +276,64 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="adress-container">
-          <a href="index.html" class="logo-web"> <span>Web</span></a>
-          <a href="index.html" class="logo-studio">
-            <span>Studio</span>
-          </a>
-          <span class="contacts">
-            г. Киев, пр-т Леси Украинки, 26
-            <br class="email" />
-            info@example.com <br class="telefone" />
-            +38 099 111 11 11
-          </span>
-        </div>
-        <div class="sociallink-container">
-          <b>ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="sociallink-end">
-            <li class="sociallink-end-element">
-              <a class="link-end" href="">
-                <svg class="social" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallink-end-element">
-              <a class="link-end" href=""
-                ><svg class="social" width="20" height="16">
-                  <use href="./images/sprite.svg#icon-bird"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallink-end-element">
-              <a class="link-end" href=""
-                ><svg class="social" width="10" height="20">
-                  <use href="./images/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallink-end-element">
-              <a class="link-end" href=""
-                ><svg class="social" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="additional-container">
+          <div class="adress-container">
+            <a href="index.html" class="logo-web"> <span>Web</span></a>
+            <a href="index.html" class="logo-studio">
+              <span>Studio</span>
+            </a>
+            <span class="contacts">
+              г. Киев, пр-т Леси Украинки, 26
+              <br class="" />
+              info@example.com <br class="" />
+              +38 099 111 11 11
+            </span>
+          </div>
+          <div class="sociallink-container">
+            <b>ПРИСОЕДИНЯЙТЕСЬ</b>
+            <ul class="sociallink-end">
+              <li class="sociallink-end-element">
+                <a class="link-end" href="">
+                  <svg class="social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sociallink-end-element">
+                <a class="link-end" href=""><svg class="social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-bird"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="sociallink-end-element">
+                <a class="link-end" href=""><svg class="social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-fb"></use>
+                  </svg></a>
+              </li>
+              <li class="sociallink-end-element">
+                <a class="link-end" href=""><svg class="social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="mailing-container">
-          <b>ПОДПИСАТЬСЯ НА РАССЫЛКУ</b>
-          <address class="email">E-mail</address>
+          <form class="mailing-form" action="" method="post">
+            <!-- Разметка элементов этой формы -->
+            <label>
+              ПОДПИШИТЕСЬ НА РАССЫЛКУ
+              <input class="email" type="email" name="email" placeholder="E-mail" />
+            </label>
+    
+            <button class="button" type="submit">Подписаться
+              <svg class="plane" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-        <a class="button" href="">Подписаться</a>
-      </div>
-      <p class="end">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

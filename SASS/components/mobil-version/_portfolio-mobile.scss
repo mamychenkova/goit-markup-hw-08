@@ -1,0 +1,170 @@
+.button-list {
+  display: flex;
+  //   padding-top: 94px;
+  //   padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  & a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background: $secondary-background-color;
+    height: 38px;
+    padding: 6px 22px;
+    margin-right: 8px;
+  }
+}
+.button-portfolio {
+  padding: 6px 22px;
+  border-radius: 4px;
+  @media screen and (max-width: 767px) {
+  }
+
+  &:hover,
+  &:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white-color;
+    background: $accent-blue-color;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-portfolio:not(:nth-child(n + 3)) {
+    margin-top: 15px;
+  }
+}
+
+// Портфолио секция
+.tehnokrak {
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    padding-bottom: 94px;
+  }
+  @media screen and (max-width: 767px) {
+  }
+
+  &-img {
+    position: relative;
+    overflow: hidden;
+  }
+  &-produkt {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+    color: $grey-text-color;
+
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  &-element {
+    border: 1px solid #eeeeee;
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      width: calc((100% - 60px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      width: calc((100% - 90px) / 3);
+    }
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      box-shadow: 1px 4px 6px rgba(126, 101, 101, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+  }
+  &-link {
+    width: 100%;
+
+    &:hover .overlay {
+      bottom: 0;
+      left: 0;
+      transform: translateX(0);
+      transition-duration: 2000ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.proekt-name {
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  bottom: -100%;
+  transform: translateY(100%);
+  transition-duration: 2000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: $white-color;
+  background: rgba(33, 150, 243, 0.9);
+  border-radius: 5px 5px 0px 0px;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+}
+
+.link-sub {
+  color: $white-color;
+}

@@ -5,8 +5,37 @@
 // }
 // .nav {
 // }
+@media screen and (min-width: 768px) {
+  .header-site .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-nav {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: inline;
+
+    // justify-content: center;
+    // margin: 0;
+  }
+}
 .site-nav {
-  display: inline;
+  // display: inline;
 
   align-items: center;
   justify-content: center;

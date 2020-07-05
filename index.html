@@ -24,6 +24,13 @@
          <div class="logo">
         <a href="index.html" class="logo-web">Web</a>
         <a href="index.html" class="logo-studio">Studio</a></div>
+        <button type="button" class="menu-button is-open" aria-controls="menu-container" data-menu-button=""
+          aria-expanded="false">
+          <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-burger" href="./images/sprite.svg#burger"></use>
+            <use class="icon-mobclose" href="./images/sprite.svg#mobclose"></use>
+          </svg>
+        </button>
         <ul class="site-nav">
          <li class="site-nav-list"><a class="site-nav-link current" href="index.html" >
          Студия
@@ -493,7 +500,8 @@ info@devstudio.com</a>
           </svg>
         </form>
   </div></div>
-  <script >
+  <script src="./js/modal.js"></script>
+  <!-- <script >
     (() => {
       document
         .querySelector('.js-speaker-form')
@@ -508,7 +516,7 @@ info@devstudio.com</a>
         });
     })();
        
-      </script>
-  <script src="./js/modal.js"></script>
+      </script> -->
+  
   </body>
 </html>

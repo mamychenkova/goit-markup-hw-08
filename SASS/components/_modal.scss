@@ -38,7 +38,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 16px 12px;
+  padding: 12px 42px 12px;
 }
 
 .form {
@@ -71,7 +71,7 @@ textarea {
   }
   &-label {
     position: absolute;
-    top: 25%;
+    top: 16px;
     left: 42px;
 
     font-weight: 200;
@@ -89,7 +89,7 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 12px 16px 12px;
+    padding: 12px 42px 12px;
   }
   &-field {
     position: relative;
@@ -100,10 +100,6 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 
-    /* Анимация иконок */
-    &:focus-within > .icon {
-      fill: $accent-blue-color;
-    }
     &:focus-within > .form-input {
       border: 1px solid $accent-blue-color;
       outline: none;
@@ -113,18 +109,31 @@ textarea {
     &:focus-within > .form-label,
     &:focus-within > .comment {
       color: $accent-blue-color;
-      transform: translate(-16px, -36px);
+      transform: translate(-16px, -42px);
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
+
 .button {
   display: inline-block;
+  border: none;
 }
 
+.form-field:focus-within > .icon {
+  fill: $accent-blue-color;
+}
+
+.form-input:not(:placeholder-shown) ~ .form-label {
+  transform: translate(-16px, -42px);
+}
+.textarea:not(:placeholder-shown) ~ .comment {
+  transform: translate(-16px, -42px);
+}
 .btn {
   width: 200px;
   transform: translateX(50%);
+  outline: none;
 }
 
 .icon {
@@ -137,7 +146,6 @@ textarea {
     width: 20px;
     height: 20px;
     background-color: $white-color;
-    fill: $logo-color;
   }
   &-check {
     left: 0;
@@ -185,6 +193,7 @@ textarea {
   &:focus-within {
     outline: none;
     border: none;
+    color: $accent-blue-color;
   }
 }
 
