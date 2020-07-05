@@ -23,15 +23,21 @@
        <nav class=nav>
          <div class="logo">
         <a href="index.html" class="logo-web">Web</a>
-        <a href="index.html" class="logo-studio">Studio</a></div>
-        <button type="button" class="menu-button is-open" aria-controls="menu-container" data-menu-button=""
+        <a href="index.html" class="logo-studio">Studio</a>
+      </div>
+        <button type="button" 
+        class="menu-button is-open" 
+        aria-controls="menu-container" 
+        data-menu-button
           aria-expanded="false">
-          <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-burger" href="./images/sprite.svg#burger"></use>
-            <use class="icon-mobclose" href="./images/sprite.svg#mobclose"></use>
+          <svg class="menu-icon" width="40" height="40" 
+          aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/sprite1.svg#icon-menu1"></use>
+            <use class="icon-cross" href="./images/sprite1.svg#icon-closed-mark"></use>
           </svg>
         </button>
-        <ul class="site-nav">
+       <div class="menu-container is-open" data-menu> 
+         <ul class="site-nav">
          <li class="site-nav-list"><a class="site-nav-link current" href="index.html" >
          Студия
           </a></li>
@@ -43,32 +49,36 @@
           </a></li>
         </ul>
       </nav>
-      </div>
+      
       <ul class="adress-nav">
         <li class="item" >
         <a class="" href="">
-          <svg class="mail" width="16" height="12">
+          <svg class="mails" width="16" height="12">
             <use href="./images/sprite.svg#icon-letter"></use>
           </svg>
 info@devstudio.com</a>
         </li   >
           <li class="item">
-            <a class="mail" href="">
+            <a class="mails" href="">
               <svg class="fone" width="10" height="15">
                 <use href="./images/sprite.svg#icon-fone"></use>
               </svg>    +38 096 111 11 11</a>
         </li>
       </ul>
       </div>
+      </div>
+    </div>
           </header>
     <main>
       <!--Герой-->
-      <div class="container-hero">
+      
         <section class="hero-section">
+          <div class="container hero"></div>
           <h1 class="hero-haeding">эффективные решения для вашего бизнеса</h1>
           <button class="button" data-modal-open >Заказать услугу</button>
-        </section>
-      </div>
+        </div>
+      </section>
+      
            <section class="advantages-section">
        <div class="container" >
           <h2 class="advantages-heading">Наши преимущества</h2>

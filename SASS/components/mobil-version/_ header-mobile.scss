@@ -1,10 +1,39 @@
-// .header-site .container {
-// }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
-// .nav-container {
-// }
-// .nav {
-// }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+
+//     &.is-open {
+//       display: block;
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-grow: 1;
+//   }
+@media screen and (max-width: 767px) {
+  .header-site .container {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-site .container {
     display: flex;
@@ -17,7 +46,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .nav {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,11 +62,59 @@
 @media screen and (max-width: 767px) {
   .site-nav {
     display: inline;
-
-    // justify-content: center;
-    // margin: 0;
+  }
+  .header-site {
+    position: relative;
   }
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  background-color: #fff;
+
+  @media screen and (max-width: 767px) {
+    & .is-open {
+      display: block;
+    }
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    min-height: 393px;
+    padding: 60px 0 60px 0;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16),
+      0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
 .site-nav {
   // display: inline;
 
@@ -96,6 +177,9 @@
   & :focus {
     color: $accent-blue-color;
   }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .current {
@@ -113,11 +197,16 @@
     background-color: $accent-blue-color;
   }
 }
-.mail :hover,
+.mails:hover,
 .fone :hover {
   fill: $accent-blue-color;
 }
-.mail,
+.mails,
 .fone {
   fill: $grey-text-color;
+  display: inline;
+  @media screen and (min-width: 1200px) {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
 }

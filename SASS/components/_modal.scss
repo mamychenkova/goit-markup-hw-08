@@ -9,14 +9,22 @@
   overflow: hidden;
 }
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  background-color: $white-color;
-  opacity: 1;
-  transform: translate(-50%, -50%);
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    // height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    height: 581px;
+    background-color: $white-color;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .comment {
@@ -42,13 +50,30 @@ textarea {
 }
 
 .form {
-  min-width: 528px;
-  height: 580px;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    // height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    width: 100%;
+    // height: 581px;
+    background-color: $white-color;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  // min-width: 528px;
+  // height: 580px;
   outline: 1px solid $grey-text-color;
   margin-left: auto;
   margin-right: auto;
   background-color: $white-color;
-  position: relative;
+  // position: relative;
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
@@ -57,6 +82,22 @@ textarea {
   display: flex;
   flex-direction: column;
   transform: translate(-50%, -50%);
+  // .form {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   -webkit-transform: translate(-50%, -50%) scale(1);
+  //   transform: translate(-50%, -50%) scale(1);
+  //   padding: 40px;
+  //   width: 95%;
+  //   text-align: center;
+  //   background-color: #fff;
+  //   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+  //     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  //   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //     0px 1px 3px rgba(0, 0, 0, 0.12);
+  //   border-radius: 4px;
+  // }
 
   &-header {
     font-family: Roboto;
@@ -198,6 +239,7 @@ textarea {
 }
 
 .rules {
+  margin-left: 5px;
   color: $accent-blue-color;
   border-bottom: $accent-blue-color;
 }
