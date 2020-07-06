@@ -40,9 +40,47 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-
   background-position: center;
-  align-items: center;
+
+  // /* 1x - значение по умолчанию, изображение 320x240 */
+
+  //   background-image: linear-gradient(
+  //       to right,
+  //       rgba(47, 48, 58, 0.6),
+  //       rgba(47, 48, 58, 0.8)
+  //     ),
+  //     url(../images/hero/id/480/768/1600);
+  //        background-size: 320px 240px;
+  // }
+
+  // /* 2x-экраны, изображение 640x480 */
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+
+  //     background-image: linear-gradient(
+  //         to right,
+  //         rgba(47, 48, 58, 0.6),
+  //         rgba(47, 48, 58, 0.8)
+  //       ),
+  //       url('https://picsum.photos/id/237/640/480');
+  //       background-size: 320px 240px;
+  //   }
+
+  // /* 3x-экраны, изображение 960x720 */
+  // @media screen and (min-device-pixel-ratio: 3),
+  //   screen and (min-resolution: 3dppx),
+  //   screen and (min-resolution: 288dpi), {
+
+  //     background-image: linear-gradient(
+  //         to right,
+  //         rgba(47, 48, 58, 0.6),
+  //         rgba(47, 48, 58, 0.8)
+  //       ),
+  //       url('https://picsum.photos/id/237/960/720');
+  //       background-size: 320px 240px;
+  //   }
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.6),
@@ -52,7 +90,7 @@
   background-repeat: no-repeat;
 
   max-width: 1600px;
-  min-height: 400px;
+  height: auto;
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
