@@ -67,10 +67,22 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
   .nav-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -78,31 +90,30 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 767px) {
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
   .nav {
     margin-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -114,13 +125,10 @@ ul {
   }
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
+@media screen and (min-width: 768px) {
+  .icon-cross {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -301,16 +309,23 @@ ul {
 }
 
 .logo {
-  display: inline;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 85px;
+  margin-right: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
-    margin-right: 0px;
-    text-align: start;
+    margin-right: 85px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 85px;
   }
 }
 

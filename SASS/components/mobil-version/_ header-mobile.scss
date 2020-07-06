@@ -1,117 +1,47 @@
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
+.header-site .container {
   @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-
-//     &.is-open {
-//       display: block;
-//     }
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     justify-content: space-between;
-//     flex-grow: 1;
-//   }
-@media screen and (max-width: 767px) {
-  .header-site .container {
-    display: flex;
-
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-site .container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    .menu-button {
+      margin-left: auto;
     }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .site-nav {
-    display: flex;
   }
 }
+.nav-container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.site-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav {
     display: inline;
   }
   .header-site {
     position: relative;
-  }
-}
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-container {
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  background-color: #fff;
-
-  @media screen and (max-width: 767px) {
-    & .is-open {
-      display: block;
-    }
-    display: none;
-    position: absolute;
-    top: 101%;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-    min-height: 393px;
-    padding: 60px 0 60px 0;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16),
-      0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-      0px 4px 8px rgba(0, 0, 0, 0.04);
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
   }
 }
 
@@ -167,18 +97,37 @@
   }
 }
 .adress-nav {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+
   & a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: $grey-text-color;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 30px;
+    }
   }
+
   & :hover,
   & :focus {
     color: $accent-blue-color;
-  }
-  @media screen and (min-width: 1200px) {
-    display: inline-flex;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+    }
   }
 }
 
@@ -205,6 +154,15 @@
 .fone {
   fill: $grey-text-color;
   display: inline;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 15px;
     margin-left: 15px;

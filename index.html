@@ -20,12 +20,12 @@
     <header class="header-site">
       <div class="container">
      <div class="nav-container"> 
-       <nav class=nav>
+       
          <div class="logo">
         <a href="index.html" class="logo-web">Web</a>
         <a href="index.html" class="logo-studio">Studio</a>
       </div>
-        <button type="button" 
+       <button type="button" 
         class="menu-button is-open" 
         aria-controls="menu-container" 
         data-menu-button
@@ -36,7 +36,7 @@
             <use class="icon-cross" href="./images/sprite1.svg#icon-closed-mark"></use>
           </svg>
         </button>
-       <div class="menu-container is-open" data-menu> 
+      <nav class=nav><div class="menu-container is-open" data-menu> 
          <ul class="site-nav">
          <li class="site-nav-list"><a class="site-nav-link current" href="index.html" >
          Студия
@@ -48,9 +48,8 @@
           Контакты
           </a></li>
         </ul>
-      </nav>
-      
-      <ul class="adress-nav">
+      <!-- </nav> -->
+          <ul class="adress-nav">
         <li class="item" >
         <a class="" href="">
           <svg class="mails" width="16" height="12">
@@ -66,6 +65,7 @@ info@devstudio.com</a>
         </li>
       </ul>
       </div>
+      </nav>
       </div>
     </div>
           </header>
@@ -177,12 +177,27 @@ info@devstudio.com</a>
         <h2 class="team-heading">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list-person">
-            <img
+            <picture>
+            <source srcset="
+                                ./images/kucherenko-450.jpg    1x,
+                                ./images/kucherenko-900@2x.jpg 2x
+                              " media="(max-width: 767px)" type="image/jpg"/>
+                            <source srcset="
+                                                ./images/kucherenko-354.jpg        1x,
+                                                ./images/kucherenko-708@2x.jpg.jpg 2x
+                                              " media="(max-width: 1199px)" type="image/jpg"/> 
+                                              <source srcset="
+                                                                  ./images/kucherenko-270.jpg    1x,
+                                                                  ./images/kucherenko-540@2x.jpg 2x
+                                                                " media="(min-width: 1200px)" type="image/jpg"/>
+          <img src="./images/kucherenko-450.jpg " alt="Николай Кучеренко"/>   
+            </picture>
+            <!-- <img
               src="./images/foto1-min.jpg"
               alt="фото1"
               width="270"
               height="260"
-            />
+            /> -->
             <h3 class="name">John Smith</h3>
             <span class="profession"> Product Designer</span>
             <ul class="sociallink-list">
@@ -217,12 +232,21 @@ info@devstudio.com</a>
             </ul>
           </li>
           <li class="team-list-person">
-            <img
-              src="./images/foto2-min-1.jpg"
-              alt="фото2"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source srcset="
+                                ./images/ivanova-450.jpg    1x,
+                                ./images/ivanova-900@2x.jpg 2x
+                              " media="(max-width: 767px)" type="image/jpg">
+              <source srcset="
+                                ./images/ivanova-354.jpg        1x,
+                                ./images/ivanova-708@2x.jpg.jpg 2x
+                              " media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="
+                                ./images/ivanova-270.jpg    1x,
+                                ./images/ivanova-540@2x.jpg 2x
+                              " media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/ivanova-450.jpg " alt="Ольга Иванова"/>
+            </picture>
             <h3 class="name">Marta Stewart</h3>
             <span class="profession"> Frontend Developer</span>
             <ul class="sociallink-list">
@@ -258,12 +282,22 @@ info@devstudio.com</a>
             </li>
 
           <li class="team-list-person">
-            <img
-              src="./images/foto3-min.jpg"
-              alt="фото3"
-              width="270"
-              height="260"
-            />
+            
+            <picture>
+              <source srcset="
+                                ./images/schevchenko-450.jpg    1x,
+                                ./images/schevchenko-900@2x.jpg 2x" 
+                                media="(max-width: 767px)" type="image/jpg">
+              <source srcset="
+                                ./images/schevchenko-354.jpg 1x,
+                                ./images/schevchenko-708@2x.jpg.jpg 2x" 
+                              media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="
+                                ./images/schevchenko-270.jpg    1x,
+                                ./images/schevchenko-540@2x.jpg 2x
+                              " media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/schevchenko-450.jpg " alt="Андрей Шевченко">
+            </picture>
             <h3 class="name">Robert Jakis</h3>
             <span class="profession">Marketing </span>
             <ul class="sociallink-list">
@@ -298,12 +332,21 @@ info@devstudio.com</a>
               </ul>
               </li>
           <li class="team-list-person">
-            <img
-              src="./images/foto4-min.jpg"
-              alt="фото4"
-              width="270"
-              height="260"
-            />
+            <picture>
+              <source srcset="
+                                ./images/nikolaev-450.jpg    1x,
+                                ./images/nikolaev-900@2x.jpg 2x
+                              " media="(max-width: 767px)" type="image/jpg">
+              <source srcset="
+                                ./images/nikolaev-354.jpg        1x,
+                                ./images/nikolaev-708@2x.jpg.jpg 2x
+                              " media="(max-width: 1199px)" type="image/jpg">
+              <source srcset="
+                                ./images/nikolaev-270.jpg    1x,
+                                ./images/nikolaev-540@2x.jpg 2x
+                              " media="(min-width: 1200px)" type="image/jpg">
+              <img src="./images/nikolaev-450.jpg " alt="Иван Николаев">
+            </picture>
             <h3 class="name">Martin Doe</h3>
             <span class="profession"> UI Designer </span>
             <ul class="sociallink-list">
