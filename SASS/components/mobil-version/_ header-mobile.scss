@@ -1,101 +1,59 @@
-.header-site .container {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen and (max-width: 767px) {
-    .menu-button {
-      margin-left: auto;
-    }
-  }
-}
+// .header-site .container {
+//   @media screen and (min-width: 768px) {
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+//   }
+//   @media screen and (max-width: 767px) {
+//     .menu-button {
+//       margin-left: auto;
+//     }
+//   }
+// }
+// @media screen and (max-width: 767px) {
+//   // .site-nav {
+//   //   display: inline;
+//   // }
+//   .header-site .container {
+//     align-content: stretch;
+//     position: relative;
+//   }
+// }
+
+// нав контейнер
 .nav-container {
   @media screen and (max-width: 767px) {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-grow: 1;
   }
 }
+// нав----------
+// .nav {
+//   @media screen and (max-width: 767px) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-grow: 1;
+//   }
+// }
 
-.nav {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
+// сайт-нав_______________
 .site-nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (max-width: 767px) {
-  .site-nav {
-    display: inline;
-  }
-  .header-site {
-    position: relative;
-  }
-}
-
 .site-nav {
   // display: inline;
 
   align-items: center;
   justify-content: center;
   margin: 0;
-
-  &-list {
-    display: flex;
-    margin-right: 60px;
-
-    & :hover {
-      color: $accent-blue-color;
-
-      & .current::before {
-        transform: translateX(-101%);
-      }
-      & .current::after {
-        transform: translateX(101%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-    & :focus {
-      color: $accent-blue-color;
-      & .current::before {
-        transform: translateX(-101%);
-      }
-      & .current::after {
-        transform: translateX(101%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-  }
-  &-link {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: $primary-text-color;
-    position: relative;
-    overflow: hidden;
-
-    display: inline-block;
-    padding: 30px 0px;
-    /* border: 1px solid #cccccc; */
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
+// Адресс-нав______
 .adress-nav {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -131,6 +89,52 @@
     text-align: center;
   }
 }
+// сайт нав лист ----------------
+.site-nav-list {
+  display: flex;
+  margin-right: 60px;
+
+  & :hover {
+    color: $accent-blue-color;
+
+    & .current::before {
+      transform: translateX(-101%);
+    }
+    & .current::after {
+      transform: translateX(101%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  & :focus {
+    color: $accent-blue-color;
+    & .current::before {
+      transform: translateX(-101%);
+    }
+    & .current::after {
+      transform: translateX(101%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+//   Сайт нав линк ____________
+.site-nav-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  position: relative;
+  overflow: hidden;
+
+  display: inline-block;
+  padding: 30px 0px;
+  /* border: 1px solid #cccccc; */
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .current {
   color: $accent-blue-color;
 
