@@ -25,18 +25,9 @@
         <a href="index.html" class="logo-web">Web</a>
         <a href="index.html" class="logo-studio">Studio</a>
       </div>
-       <button type="button" 
-        class="menu-button is-open" 
-        aria-controls="menu-container" 
-        data-menu-button
-          aria-expanded="false">
-          <svg class="menu-icon" width="40" height="40" 
-          aria-label="Переключатель мобильного меню">
-            <use class="icon-menu" href="./images/sprite1.svg#icon-menu1"></use>
-            <use class="icon-cross" href="./images/sprite1.svg#icon-closed-mark"></use>
-          </svg>
-        </button>
-      <nav class=nav><div class="menu-container is-open" data-menu> 
+      
+      <nav class=nav>
+        <div class="menu-container"  id="menu-container"  data-menu> 
          <ul class="site-nav">
          <li class="site-nav-list"><a class="site-nav-link current" href="index.html" >
          Студия
@@ -65,6 +56,12 @@ info@devstudio.com</a>
         </li>
       </ul>
       </div>
+      <button type="button" class="menu-button"    aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню" >
+          <use class="icon-menu" href="./images/sprite1.svg#icon-menu1"></use>
+          <use class="icon-cross" href="./images/sprite1.svg#icon-closed-mark"></use>
+        </svg>
+      </button>
       </nav>
       </div>
     </div>
@@ -553,8 +550,9 @@ info@devstudio.com</a>
           </svg>
         </form>
   </div></div>
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
-  <!-- <script >
+  <script >
     (() => {
       document
         .querySelector('.js-speaker-form')
@@ -569,7 +567,7 @@ info@devstudio.com</a>
         });
     })();
        
-      </script> -->
+      </script>
   
   </body>
 </html>

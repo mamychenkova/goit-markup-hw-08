@@ -10,15 +10,15 @@
 //     }
 //   }
 // }
-// @media screen and (max-width: 767px) {
-//   // .site-nav {
-//   //   display: inline;
-//   // }
-//   .header-site .container {
-//     align-content: stretch;
-//     position: relative;
-//   }
-// }
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: inline;
+  }
+  .header-site .container {
+    align-content: stretch;
+    position: relative;
+  }
+}
 
 // нав контейнер
 .nav-container {
