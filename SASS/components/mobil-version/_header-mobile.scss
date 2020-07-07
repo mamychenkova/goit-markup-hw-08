@@ -167,6 +167,9 @@
 .fone {
   fill: $grey-text-color;
   display: inline;
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
+  }
   @media screen and (min-width: 768px) {
     text-align: start;
     margin-top: 10px;

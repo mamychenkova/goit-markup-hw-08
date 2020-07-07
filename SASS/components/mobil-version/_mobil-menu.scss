@@ -5,7 +5,9 @@
 .menu-button:focus {
   fill: $accent-blue-color;
 }
-
+.menu-button .icon-cross {
+  display: none;
+}
 .menu-button.is-open .icon-cross {
   display: block;
 }
@@ -21,6 +23,11 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   background-color: #fff;
+
+  & .is-open {
+    display: block;
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -28,13 +35,12 @@
     left: 0;
     width: 100%;
     min-height: 393px;
-
-    padding: 60px 0 60px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 160px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 4px 8px rgba(0, 0, 0, 0.04);
-    & .is-open {
-      display: block;
-    }
+
     & .icon-menu {
       display: block;
     }
@@ -55,9 +61,7 @@
 .menu-container .is-open {
   display: block;
 }
-.menu-button .icon-cross {
-  display: none;
-}
+
 .menu-button {
   display: block;
   padding: 0;
@@ -68,7 +72,7 @@
     display: none;
   }
   @media screen and (max-width: 767px) {
-    & .menu-container {
+    &.is-open .menu-container {
       display: block;
     }
   }
