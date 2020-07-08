@@ -19,21 +19,28 @@
   overflow: hidden;
 }
 .modal {
-  @media screen and (max-width: 1199px) {
+  background-color: $white-color;
+  opacity: 1;
+  @media screen and (min-width: 768px) {
     max-width: 450px;
-    width: 100%;
-    z-index: 9;
-    transform: translate(-50%, -50%);
-    // height: 609px;
-  }
-  @media screen and (min-width: 1200px) {
+    height: 609px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
     max-width: 528px;
     height: 581px;
-    background-color: $white-color;
-    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
   }
 }
@@ -62,6 +69,14 @@ textarea {
 
 .form {
   width: 100%;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    max-width: 450px;
+    transform: translate(-50%, -50%);
+    height: 609px;
+  }
   @media screen and (max-width: 1199px) {
     max-width: 450px;
 
@@ -78,13 +93,12 @@ textarea {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
-  // min-width: 528px;
-  // height: 580px;
+
   outline: 1px solid $grey-text-color;
   margin-left: auto;
   margin-right: auto;
   background-color: $white-color;
-  // position: relative;
+  position: relative;
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
@@ -92,7 +106,7 @@ textarea {
 
   display: flex;
   flex-direction: column;
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
   // .form {
   //   position: absolute;
   //   top: 50%;
@@ -137,7 +151,7 @@ textarea {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-input {
-    width: 100%;
+    width: 80%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
