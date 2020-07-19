@@ -69,7 +69,8 @@ textarea {
 
 .form {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  // @media screen and (max-width: 767px) {}
+  @media screen and (max-width: 1199px) {
     position: relative;
     top: 50%;
     left: 50%;
@@ -77,17 +78,12 @@ textarea {
     transform: translate(-50%, -50%);
     height: 609px;
   }
-  @media screen and (max-width: 1199px) {
-    max-width: 450px;
 
-    transform: translate(-50%, -50%);
-    height: 609px;
-  }
   @media screen and (min-width: 1200px) {
     position: relative;
     top: 50%;
     left: 50%;
-    max-width: 528;
+    max-width: 528px;
     height: 581px;
     background-color: $white-color;
     opacity: 1;
@@ -151,11 +147,13 @@ textarea {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-input {
-    width: 80%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 42px 12px;
+    @media screen and (max-width: 1199px) {
+      width: 80%;
+    }
   }
   &-field {
     position: relative;
